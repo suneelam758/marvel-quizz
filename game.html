@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Marvel Quiz</title>
+<style>
+body
+{
+	background-color:#96C;
+}
+
+</style>
+</head>
+<body>
+<h1 style="text-align:center; font-size:56px; color:#F30;">Welcome To MCU</h1>
+<img src="ironman.webp" style="margin-left:40%;" /><br/><br/>
+<div id="s" style="font-size:24px; color:#333; text-align:center;">Instructions<br/>1.
+You will get Ten seconds for each question<br/>2. Read question carefuuly<br/>3. After this message disappear you will get 10 second for each question<br/>4. enter you answer in out box and press enter button for each question<br/>5.The ans will shown in the right of page<br/>6. Be Active Be quick</div><br/><br/><br/><br/>
+<div id="a" style="font-size:18px; color:#903;">Who is hulk?<br/><br/>a. Bruce Banner    b. Tony Stark<br/>
+<input type="text" id="m" onchange="az()" placeholder="enter a or b for answers" /></div><br/><br/>
+<div id="b" style="font-size:18px; color:#903;">How Many Phds Dr. Bruce had done?<br/><br/>a. Two    b. Twelve<br/>
+<input type="text" id="n" onchange="ay()" placeholder="enter a or b for answers" /></div><br/><br/>
+<div id="c" style="font-size:18px; color:#903;">How many infinity stones are in universe?<br/>a. six    b. five<br/>
+<input type="text" id="o" onchange="ax()" placeholder="enter a or b for answers" /></div><br/><br/>
+<div id="d" style="font-size:18px; color:#903;">Who is the founder of SHIELD?<br/>a.Nick Fury     b. Peggy Carter<br/>
+<input type="text" id="p" onchange="aw()" placeholder="enter a or b for answers" /></div><br/><br/>
+<div id="e" style="font-size:18px; color:#903;">Who created Marvel Universe?<br/>a. Stan lee    b. Kevin Feige<br/>
+<input type="text" id="q" onchange="av()" placeholder="enter a or b for answers" /></div>
+<div id="f" style="text-align:center; font-size:18px; margin-left:70%; height:30px; width:auto; background-color:#999; margin-top:-350px; color:#FFF; position:absolute;">Here will be your answer</div>
+<script>
+function mn()
+{
+	document.getElementById("s").innerHTML="Good Luck";
+}
+function mn1()
+{
+	document.getElementById("s").style.display="none";
+}
+setInterval('mn()',10000);
+setInterval('mn1()',12000);
+var x= document.getElementById("a");
+function aa()
+{
+	x.style.display="none";
+}
+setInterval('aa()',20000);
+var y= document.getElementById("b");
+function ab()
+{
+	y.style.display="none";
+}
+setInterval('ab()',30000);
+var z= document.getElementById("c");
+function ac()
+{
+	z.style.display="none";
+}
+setInterval('ac()',40000);
+var w= document.getElementById("d");
+function ad()
+{
+	w.style.display="none";
+}
+setInterval('ad()',50000);
+var v= document.getElementById("e");
+function ae()
+{
+	v.style.display="none";
+}
+setInterval('ae()',60000);
+var t= document.getElementById("f");
+function af()
+{
+	t.style.display="none";
+}
+setInterval('af()',61000);
+var f= document.getElementById("f");
+function az(){
+	if(document.getElementById("m").value=="a")
+	{
+		f.innerHTML="correct";
+	}
+	else
+	f.innerHTML="wrong answer";
+}
+function ay(){
+	if(document.getElementById("n").value=="b")
+	{
+		f.innerHTML="correct";
+		
+		
+	}
+	else
+	f.innerHTML="wrong answer";
+}
+function ax(){
+	if(document.getElementById("o").value=="a")
+	{
+		f.innerHTML="correct";
+	}
+	else
+	f.innerHTML="wrong answer";
+}
+function aw(){
+	if(document.getElementById("p").value=="b")
+	{
+		f.innerHTML="correct";
+	}
+	else
+	f.innerHTML="wrong answer";
+}
+function av(){
+	if(document.getElementById("q").value=="a")
+	{
+		f.innerHTML="correct";
+	}
+	else
+	f.innerHTML="wrong answer";
+}
+
+</script>
+</body>
+</html>
